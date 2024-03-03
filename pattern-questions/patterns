@@ -1,0 +1,294 @@
+Hiii, 
+WHY do we need to do these questions?
+=> These pattern question helps us to build logic, we get to know how the loops work and it make us familiar with getting a desired output using a specific Condition.
+ 
+
+Lets dive into the problems -
+
+1. *****
+   *****
+   *****
+   *****
+   *****
+   
+   solution:-
+             for(int i=0;i<=4;i++){
+        
+        for(int j=0;j<=4;j++){
+
+            System.out.print("*");
+        }
+System.out.println(); 
+}
+               
+
+
+2. *
+   **
+   ***
+   *****
+   ******
+  solution:-
+            for(int i=0;i<=4;i++){
+        
+        for(int j=0;j<=i;j++){
+
+            System.out.print("*");
+        }
+System.out.println(); 
+}
+
+
+3. *****
+   ****
+   ***
+   **
+   *
+   solution:-
+             for(int i=0;i<=4;i++){
+        
+        for(int j=4;j>=i;j--){
+
+            System.out.print("*");
+        }
+System.out.println(); 
+}
+
+
+4. 1
+   1 2
+   1 2 3
+   1 2 3 4
+   1 2 3 4 5
+   solution:-
+             for(int i=0;i<=5;i++){
+        
+        for(int j=1;j<=i;j++){
+
+            System.out.print(" "+j);
+        }
+System.out.println(); 
+}
+
+
+5. *
+   * *
+   * * *
+   * * * *
+   * * * * *
+   * * * *
+   * * *
+   * *
+   *
+   solution:-
+             for(int i=1;i<=9;i++){
+        if(i>5){
+        for(int j=1;j<=10-i;j++){
+            System.out.print("*");
+        } }
+        else{
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+        }
+System.out.println(); 
+}
+
+
+6.      *
+       **
+      ***
+     ****
+    *****  
+    solution:-
+              for(int i=1;i<=5;i++){
+            for(int j=5;j>=i;j--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+        System.out.println(); }
+        
+
+7. *****
+    ****
+     ***
+      **
+       *
+
+  solution:-
+            for(int i=1;i<=5;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(" ");
+            }
+            for(int j=5;j>=i;j--){
+                System.out.print("*");
+            }
+        System.out.println(); }
+
+
+8.      *
+       ***
+      *****
+     *******
+    *********
+    solution:-
+              for(int i=0;i<=4;i++){
+            for(int j=5;j>=i;j--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=2*i+1;j++){
+                System.out.print("*");
+            }
+        System.out.println(); }
+
+
+9.  *********
+     *******
+      *****
+       ***
+        *
+  solution:-
+            for(int i=0;i<=4;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(" ");
+            }
+            for(int j=9;j>=2*i+1;j--){
+                System.out.print("*");
+            }
+        System.out.println(); }
+
+            
+
+
+10.      *
+        * *
+       * * *
+      * * * *
+     * * * * *
+
+     solution:-
+                 for(int i=0;i<=5;i++){
+    for(int j=6-i;j>1;j--){
+        System.out.print(" ");
+    }
+    for(int j=0;j<=i;j++){
+        System.out.print("* ");
+    }
+System.out.println(); }  
+
+
+11.  * * * * *
+      * * * *
+       * * *
+        * *
+         * 
+  solution:-
+            for(int i=1;i<=5;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(" ");
+            }
+            for(int j=5;j>=i;j--){
+                System.out.print("* ");
+            }
+        System.out.println(); }
+
+
+12.  * * * * *
+      * * * *
+       * * *
+        * *
+         *
+         *
+        * *
+       * * *
+      * * * *
+     * * * * *
+     
+solution:-   for(int i=0 ;i<9;i++){
+            int s;
+            if(i<5){
+                s=i;
+            } else{
+                s=8-i;
+            }
+            for(int j=0;j<s;j++){
+                System.out.print(" ");
+            }
+            for(int k=0;k<(5-s);k++){
+                System.out.print("* ");
+            }
+            System.out.println(); }
+
+    
+
+     
+               
+
+
+13.      *
+        * *
+       *   *
+      *     *
+     *********
+     solution:- 
+               for(int i=0;i<=4;i++){
+        
+        for(int j=0;j<9;j++){
+            if(j+i==4||j-i==4||i==4){
+                System.out.print("*");
+            }
+            else{
+            System.out.print(" ");
+        }
+        
+        }
+System.out.println(); 
+}      
+
+
+14 . *********
+      *     *
+       *   *
+        * *
+         *
+    solution:-
+              for(int i=0;i<=4;i++){
+        
+        for(int j=0;j<9;j++){
+            if(j-i==0||i+j==8||i==0){
+                System.out.print("*");
+            }
+            else{
+            System.out.print(" ");
+        }
+        
+        }
+System.out.println(); 
+}         
+
+
+15 .     *
+        * *
+       *   *
+      *     *
+     *       *
+      *     *
+       *   *
+        * *
+         *  
+solution:-
+          for(int i=0;i<=8;i++){
+        
+        for(int j=0;j<9;j++){
+            if(i+j==4||j-i==4||i-j==4||j+i==12){
+                System.out.print("*");
+            }
+            else{
+            System.out.print(" ");
+        }
+        
+        }
+System.out.println(); 
+}         
